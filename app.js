@@ -1,12 +1,18 @@
 function sortear() {
-  let quantidade = parseInt(document.getElementById('quantidade').value);
-  let de = parseInt(document.getElementById('de').value);
-  let ate = parseInt(document.getElementById('ate').value);
+  let quantidade = Number(document.getElementById('quantidade').value);
+  let de = Number(document.getElementById('de').value);
+  let ate = Number(document.getElementById('ate').value);
   let intervalo = ate - de + 1;
 
   // Validações antes do sorteio
   if (isNaN(quantidade) || isNaN(de) || isNaN(ate)) {
     alert('Por favor, preencha todos os campos corretamente.');
+    reiniciar();
+    return;
+  }
+
+  if (!Number.isInteger(quantidade) || !Number.isInteger(de) || !Number.isInteger(ate)) {
+    alert('Por favor, insira apenas números inteiros nos campos.');
     reiniciar();
     return;
   }
