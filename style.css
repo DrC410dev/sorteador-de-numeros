@@ -119,6 +119,7 @@ h1 {
     font-weight: 700;
     line-height: 100%;
     padding: 2rem;
+    text-align: center;
 }
 
 .texto__paragrafo {
@@ -149,6 +150,8 @@ button:disabled {
     h1 {
         font-size: 35px;
         text-align: center;
+        line-height: 1;
+        
     }
 
     .container__botao {
@@ -163,7 +166,7 @@ button:disabled {
 
     .texto__paragrafo {
         font-size: 16px;
-        text-align: justify;
+        text-align: left;
     }
 
     .container__texto {
@@ -175,7 +178,7 @@ button:disabled {
         display: flex;
         align-items: left;
         justify-content: space-between;
-        margin-bottom: 12px;
+        margin-bottom: 5px;
     }
 
     .container__imagem-pessoa {
@@ -183,7 +186,7 @@ button:disabled {
     }
 
     .container__conteudo {
-        display: inline-block;
+        display: block;
         position: inherit;
     }
 
