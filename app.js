@@ -32,6 +32,8 @@ function sortear() {
     }
   }
 
+  sorteados.sort((a, b) => a - b);
+
   document.getElementById('resultado').innerHTML =
     `<label class="texto__paragrafo">Números sorteados:<br>${sorteados.join(' | ')}</label>`;
 
